@@ -1,0 +1,73 @@
+body {
+  background: #262626;
+}
+
+.box-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px;
+  transition: 0.3s all;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid #ddd;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  padding: 20px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  width: 80px;
+  height: 80px;
+}
+
+.single-box:nth-child(1) .img-area {
+  background-image: url("./images/web-design-img.jpg");
+}
+
+.single-box:nth-child(2) .img-area {
+  background-image: url("./images/graphic-design-img.jpg");
+}
+
+.single-box:nth-child(3) .img-area {
+  background-image: url("./images/email-img.jpg");
+}
+
+.header-text {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.img-text {
+  font-family: "Poppins", sans-serif;
+  padding-top: 20px;
+}
+.img-text p {
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.single-box:hover {
+  background: #e84393;
+  color: #fff;
+}
